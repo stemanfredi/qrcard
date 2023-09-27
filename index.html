@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>vCard to QR Code</h2>
+      <textarea
+        id="vcardInput"
+        rows="16"
+        cols="30"
+        placeholder="Paste your vCard content here..."
+      ></textarea>
+      <button onclick="generateQRCode()">Generate QR Code</button>
+      <div id="qrcode"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
